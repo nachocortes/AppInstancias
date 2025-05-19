@@ -17,7 +17,7 @@ class IncidenciaService {
             case .success(let todas) :
                 let filtradas = todas
                     .filter { $0.incidenciaUserId == userId }
-                    .map { IncidenciaUI(from: $0) } // 🔁 transforma al modelo de UI
+                    .map { IncidenciaUI(from: $0) }
                 completion(.success(filtradas))
             case .failure(let error):
                 completion(.failure(error))

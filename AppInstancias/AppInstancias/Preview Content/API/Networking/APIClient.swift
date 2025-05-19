@@ -47,7 +47,7 @@ class APIClient {
         }.resume()
     }
 
-    // 🔄 Reutiliza la lógica de respuesta
+    // Reutiliza la lógica de respuesta
     private func handleResponse<T: Decodable>(
         data: Data?,
         response: URLResponse?,
